@@ -187,26 +187,30 @@ section{
 }
 
 /* ---------- EXTRA SMALL SCREEN STYLES ---------- */
-header, footer{
-    background-color: var(--pink);
-    color: var(--white);
-}
+/* --------------- BEGIN EXTRA SMALL SCREEN SIZES --------------- */
+@media screen and (max-width: 480px) {
+    header, footer{
+        background-color: var(--pink);
+        color: var(--white);
+    }
 
-section{
-    background-color: var(--red);
-    color: var(--light-gray);
-}
+    section{
+        background-color: var(--red);
+        color: var(--light-gray);
+    }
 
-img{
-    margin: 0.75em 0.75em 0.75em 0;
-    display: inline;
-    float: left;
+    img{
+        margin: 0.75em 0.75em 0.75em 0;
+        display: inline;
+        float: left;
+    }
 }
+/* --------------- END EXTRA SMALL SCREEN SIZES --------------- */
 
 
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 620px) {
     header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
